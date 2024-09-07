@@ -2,8 +2,12 @@
 #include <fstream>
 #include <random>
 using namespace std;
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Multiplicacion_de_matrices
-// g++ -o out -Wall datasetgenerator.cpp
+
+/*
+int main()
+crea las matrices A y B aleatoriamente
+y las guarda en su respectivo txt
+*/
 int main(){
     random_device generador;
     mt19937 gen(generador());

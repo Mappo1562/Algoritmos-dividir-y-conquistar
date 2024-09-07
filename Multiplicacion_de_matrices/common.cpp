@@ -5,8 +5,14 @@
 
 using namespace std;
 
+// nData define la longitud de la matriz
 int nData = 7000;
 
+
+/*
+vector<vector<int>> generar_mat(string datatype)
+crea una matriz a partir del txt con nombre datatype
+*/
 vector<vector<int>> generar_mat(string datatype){
     ifstream data(datatype+".txt");
 
@@ -26,7 +32,10 @@ vector<vector<int>> generar_mat(string datatype){
     return matriz;
 }
 
-
+/*
+void generar_txt(vector<vector<int>> matriz)
+escribe el resultado final en salida.txt
+*/
 void generar_txt(vector<vector<int>> matriz){
     ofstream salida("salida.txt");
     if (!salida){

@@ -6,10 +6,12 @@ using namespace std;
 // lucasletum
 // https://www.geeksforgeeks.org/strassens-matrix-multiplication/
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Multiplicacion_de_matrices/strassen
-// g++ -o out -Wall strassen.cpp
 
-// Funcion que suma o resta matrices 
+
+/*
+vector<vector<int> > add_matrix(vector<vector<int> > matrix_A, const vector<vector<int> >& matrix_B, int split_index, int multiplier = 1)
+esta funcion suma o resta las matrices de entrada
+*/
 vector<vector<int> > add_matrix(vector<vector<int> > matrix_A, const vector<vector<int> >& matrix_B, int split_index, int multiplier = 1){
     for (auto i = 0; i < split_index; i++)
         for (auto j = 0; j < split_index; j++)
@@ -17,7 +19,11 @@ vector<vector<int> > add_matrix(vector<vector<int> > matrix_A, const vector<vect
     return matrix_A;
 }
 
-// se optimiza con el cons
+
+/*
+vector<vector<int> >multiply_matrix(const vector<vector<int> >& matrix_A,const vector<vector<int> >& matrix_B)
+multiplica las matrices A*B utilizando el algoritmo de Strassen
+*/
 vector<vector<int> >multiply_matrix(const vector<vector<int> >& matrix_A,const vector<vector<int> >& matrix_B){
     int col_1 = matrix_A[0].size();
     int row_1 = matrix_A.size();

@@ -6,9 +6,11 @@
 
 using namespace std;
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Multiplicacion_de_matrices/alg_tradicional
-// g++ -o out -Wall tradicional.cpp
 
+/*
+vector<vector<int>> multiplicar(vector<vector<int>>& A, vector<vector<int>>& B)
+Multiplica las matrices con el algoritmo tradicional
+*/
 vector<vector<int>> multiplicar(vector<vector<int>>& A, vector<vector<int>>& B){
     vector<vector<int>> resultado(nData, vector<int>(nData));
     int sum;

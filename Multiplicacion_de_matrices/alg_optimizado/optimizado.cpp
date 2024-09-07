@@ -6,9 +6,11 @@
 
 using namespace std;
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Multiplicacion_de_matrices/alg_optimizado
-// g++ -o out -Wall optimizado.cpp
 
+/*
+vector<vector<int>> transpuesta(vector<vector<int>>& B)
+calcula la matriz transpuesta de B
+*/
 vector<vector<int>> transpuesta(vector<vector<int>>& B){
 
     vector<vector<int>> aux(nData, vector<int>(nData));
@@ -20,7 +22,10 @@ vector<vector<int>> transpuesta(vector<vector<int>>& B){
     return aux;
 }
 
-
+/*
+vector<vector<int>> multiplicar(vector<vector<int>>& A, vector<vector<int>>& B)
+Multiplica las matrices
+*/
 vector<vector<int>> multiplicar(vector<vector<int>>& A, vector<vector<int>>& B){
     vector<vector<int>> resultado(nData, vector<int>(nData));
     int sum;
