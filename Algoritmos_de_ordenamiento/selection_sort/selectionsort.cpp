@@ -2,10 +2,10 @@
 
 using namespace std;
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Algoritmos_de_ordenamiento/selection_sort
-// g++ -o out -Wall selectionsort.cpp
-
-
+/*
+void selectionsort(vector<int>& arr)
+ordena el arreglo con selectionsort
+*/
 void selectionsort(vector<int>& arr){
     int m, aux;
     for (int i=0;i<nData;i++){

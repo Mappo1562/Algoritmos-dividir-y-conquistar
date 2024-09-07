@@ -5,8 +5,13 @@
 
 using namespace std;
 
-int nData = 2000000;//10000000
+// nData define el largo del vector
+int nData = 2000000;
 
+/*
+vector<int> generar_arr()
+guarda los numeros de dataset.txt en un vector
+*/
 vector<int> generar_arr(){
     ifstream data("../dataset.txt");
 
@@ -24,7 +29,10 @@ vector<int> generar_arr(){
     return arr;
 }
 
-
+/*
+void generar_txt(vector<int>& arr)
+escribe el resultado final en salida.txt
+*/
 void generar_txt(vector<int>& arr){
     ofstream salida("salida.txt");
     if (!salida){

@@ -2,15 +2,19 @@
 #include <fstream>
 #include <random>
 using namespace std;
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Algoritmos_de_ordenamiento
-// g++ -o out -Wall datasetgenerator.cpp
+
+// nData define el largo del vector
 int nData=100000000;
 
+/*
+de crea el archivo dataset.txt y se llena de
+numeros aleatorios entre min y max
+*/
 int main(){
     random_device generador;
     mt19937 gen(generador());
 
-    int min=0, max=1000000;//1000000
+    int min=0, max=1000000;
     int numero;
 
     uniform_int_distribution<> distribucion(min,max);

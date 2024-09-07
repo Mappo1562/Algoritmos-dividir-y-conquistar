@@ -2,16 +2,20 @@
 
 using namespace std;
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Algoritmos_de_ordenamiento/quick_sort
-// g++ -o out -Wall quicksort.cpp
-
+/*
+void swap(int &a,int &b)
+intercambia dos valores (los estara cambiando dentro del vector)
+*/
 void swap(int &a,int &b){
     int aux=a;
     a=b;
     b=aux;
 }
 
-
+/*
+void quicksort(vector<int>& arr, int inicio, int final)
+ordena el arreglo recursivamente con quicksort
+*/
 void quicksort(vector<int>& arr, int inicio, int final){
     if (final<=inicio)
         return;

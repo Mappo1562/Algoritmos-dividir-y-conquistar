@@ -2,8 +2,11 @@
 
 using namespace std;
 
-// cd /mnt/d/user/Admin/Documents/p/algoco/algoritmos-dividir-y-conquistar/Algoritmos_de_ordenamiento/merge_sort
-// g++ -o out -Wall mergesort.cpp
+/*
+void merge(vector<int>& arr, int inicio, int centro, int final)
+crea dos vectores y los va eligiendo el menor a la vez guardandolo
+en el vector principal
+*/
 
 void merge(vector<int>& arr, int inicio, int centro, int final){
     int n1 = centro-inicio+1, n2 = final-centro;
@@ -41,7 +44,10 @@ void merge(vector<int>& arr, int inicio, int centro, int final){
     }
 }
 
-
+/*
+void mergesort(vector<int>& arr, int inicio, int final)
+funcion recursiva que separa el vector para ordenarlo
+*/
 void mergesort(vector<int>& arr, int inicio, int final){
     if (inicio<final){
         int centro=(inicio+final)/2;
